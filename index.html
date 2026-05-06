@@ -17,11 +17,12 @@
             min-height: 85vh; display: flex; align-items: center;
         }
         
-        /* COLORES GCE BOLIVIA */
+        /* COLORES CORPORATIVOS GCE BOLIVIA */
         .bg-gce-orange { background-color: #EE7733; }
         .text-gce-orange { color: #EE7733; }
-        .bg-gce-yellow { background-color: #FFD700; }
         .border-gce-orange { border-color: #EE7733; }
+        .bg-gce-yellow { background-color: #FFD700; }
+        .text-gce-yellow { color: #FFD700; }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
@@ -32,9 +33,9 @@
                 <div class="flex items-center">
                     <img src="logo.jpg" alt="GCE Bolivia Logo" style="height: 65px; width: auto; object-fit: contain;">
                 </div>
-                <div class="hidden md:flex items-center space-x-6">
-                    <a href="#services" class="text-gray-600 hover:text-slate-900 font-medium">Servicios</a>
-                    <a href="https://wa.me/59175788547" class="bg-gce-orange hover:bg-orange-600 text-white px-6 py-2 rounded-lg font-bold transition-all shadow-md">Contacto</a>
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="#services" class="bg-gce-orange hover:bg-orange-600 text-white px-5 py-2 rounded-lg font-bold transition-all shadow-md text-sm">Servicios</a>
+                    <a href="#contacto" class="bg-gce-orange hover:bg-orange-600 text-white px-5 py-2 rounded-lg font-bold transition-all shadow-md text-sm">Contacto</a>
                 </div>
             </div>
         </div>
@@ -55,21 +56,54 @@
     </div>
 
     <div class="py-24 bg-white" id="services">
-        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
-            <div class="p-8 border-t-4 border-gce-orange bg-slate-50 rounded-xl transition-all hover:shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <div class="p-8 border-t-8 border-gce-orange bg-white shadow-lg rounded-xl transition-all hover:scale-105">
                 <i class="fas fa-chart-line text-4xl text-gce-orange mb-6"></i>
                 <h3 class="text-xl font-bold mb-2">Auditoría & Tax</h3>
                 <p class="text-gray-500">Transparencia financiera bajo normativa local.</p>
             </div>
-            <div class="p-8 border-t-4 border-gce-yellow bg-slate-50 rounded-xl transition-all hover:shadow-lg">
+            <div class="p-8 border-t-8 border-gce-orange bg-white shadow-lg rounded-xl transition-all hover:scale-105">
                 <i class="fas fa-users-gear text-4xl text-gce-orange mb-6"></i>
                 <h3 class="text-xl font-bold mb-2">EOR Services</h3>
                 <p class="text-gray-500">Contratación inmediata sin necesidad de entidad legal.</p>
             </div>
-            <div class="p-8 border-t-4 border-gce-orange bg-slate-50 rounded-xl transition-all hover:shadow-lg">
+            <div class="p-8 border-t-8 border-gce-orange bg-white shadow-lg rounded-xl transition-all hover:scale-105">
                 <i class="fas fa-file-invoice-dollar text-4xl text-gce-orange mb-6"></i>
                 <h3 class="text-xl font-bold mb-2">Payroll Management</h3>
                 <p class="text-gray-500">Gestión completa de planillas y beneficios sociales.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="py-20 bg-slate-100" id="contacto">
+        <div class="max-w-3xl mx-auto px-4">
+            <div class="bg-white rounded-3xl shadow-2xl p-8 md:p-12 border-t-4 border-gce-orange">
+                <h2 class="text-3xl font-bold text-center text-slate-900 mb-2">Solicitar Información</h2>
+                <p class="text-center text-gray-500 mb-8">Déjanos tus datos y un experto se pondrá en contacto contigo.</p>
+                
+                <form id="gceForm" class="space-y-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <input type="text" name="Nombre" placeholder="Tu Nombre Completo" required class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
+                        <input type="email" name="Email" placeholder="Tu Correo Electrónico" required class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <input type="text" name="WhatsApp" placeholder="WhatsApp (Ej: +591 ...)" required class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
+                        <select name="Servicio" required class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
+                            <option value="">Selecciona el Servicio</option>
+                            <option value="Auditoria">Auditoría & Tax</option>
+                            <option value="EOR">EOR Services</option>
+                            <option value="Payroll">Payroll Management</option>
+                        </select>
+                    </div>
+                    <textarea name="Mensaje" rows="4" placeholder="¿En qué podemos ayudarte?" required class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"></textarea>
+                    
+                    <button type="submit" id="submitBtn" class="w-full bg-gce-orange hover:bg-orange-600 text-white font-bold py-4 rounded-lg shadow-lg transition-all transform hover:scale-[1.02]">
+                        Enviar Datos a un Experto
+                    </button>
+                    <p id="mensajeExito" class="hidden text-center text-green-600 font-bold mt-4 text-lg italic">
+                        ¡Datos enviados con éxito! Revisaremos tu solicitud de inmediato.
+                    </p>
+                </form>
             </div>
         </div>
     </div>
@@ -84,5 +118,29 @@
         <p class="text-xs text-gray-500 uppercase tracking-widest font-semibold">Basados en La Paz, Bolivia</p>
     </footer>
 
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz-yFNLmjMOYZUBfxCyIiXBe4mMDEGxMfRDQzum8bl0bUbCuVksCKpTLenVT5ei-jC6/exec';
+        const form = document.getElementById('gceForm');
+        const btn = document.getElementById('submitBtn');
+        const msg = document.getElementById('mensajeExito');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            btn.disabled = true;
+            btn.innerText = 'Enviando...';
+            
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    btn.classList.add('hidden');
+                    msg.classList.remove('hidden');
+                    form.reset();
+                })
+                .catch(error => {
+                    console.error('Error!', error.message);
+                    btn.disabled = false;
+                    btn.innerText = 'Error al enviar. Intenta de nuevo.';
+                });
+        });
+    </script>
 </body>
 </html>
