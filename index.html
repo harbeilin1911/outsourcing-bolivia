@@ -3,22 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Employer of Record (EOR) & Payroll Services in Bolivia | GCE Bolivia</title>
+    <title>GCE Bolivia - EOR & Payroll Experts</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <meta name="google-site-verification" content="aemQN5py70LKKajHUDGCns1cPzn_5UBD2tcFff2DEPK" />
-
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
         body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        
         .hero-uyuni {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('fondo.png');
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), 
+                              url('fondo.png');
             background-size: cover; background-position: center; background-attachment: fixed;
             min-height: 85vh; display: flex; align-items: center;
         }
+        
+        /* COLORES CORPORATIVOS GCE BOLIVIA */
         .bg-gce-orange { background-color: #EE7733; }
         .text-gce-orange { color: #EE7733; }
         .border-gce-orange { border-color: #EE7733; }
+        .bg-gce-yellow { background-color: #FFD700; }
+        .text-gce-yellow { color: #FFD700; }
+        
+        /* COLOR DEL FOOTER FACEBOOK */
+        .bg-footer-custom { background-color: #F20064; }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
@@ -29,24 +36,115 @@
                 <div class="flex items-center">
                     <img src="logo.jpg" alt="GCE Bolivia Logo" style="height: 65px; width: auto; object-fit: contain;">
                 </div>
-                <div class="hidden md:flex items-center space-x-4 text-center">
-                    <a href="news.html" class="bg-white border-2 border-gce-orange text-gce-orange hover:bg-gce-orange hover:text-white px-5 py-2 rounded-lg font-bold transition-all shadow-md text-sm">Noticias</a>
-                    <a href="#servicios" class="bg-gce-orange hover:bg-orange-600 text-white px-5 py-2 rounded-lg font-bold transition-all shadow-md text-sm">Servicios</a>
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="#noticias" class="border-2 border-gce-orange text-gce-orange hover:bg-gce-orange hover:text-white px-5 py-2 rounded-lg font-bold transition-all shadow-md text-sm bg-white">Noticias</a>
+                    <a href="#services" class="bg-gce-orange hover:bg-orange-600 text-white px-5 py-2 rounded-lg font-bold transition-all shadow-md text-sm">Servicios</a>
                     <a href="#contacto" class="bg-gce-orange hover:bg-orange-600 text-white px-5 py-2 rounded-lg font-bold transition-all shadow-md text-sm">Contacto</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <header class="hero-uyuni text-white w-full pt-20">
-        <div class="max-w-7xl mx-auto px-4 text-center">
-            <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-6">Your Compliant <span class="text-yellow-400">Partner</span> in Bolivia</h1>
-            <p class="text-xl md:text-2xl mb-10 text-gray-200">Expert local solutions for international businesses.</p>
-            <a href="https://wa.me/tu-numero" class="inline-flex items-center bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-full text-lg transition-all shadow-lg transform hover:scale-105">
-                <i class="fab fa-whatsapp mr-3 text-2xl"></i> Hablar con un Experto
+    <div class="hero-uyuni pt-20">
+        <div class="max-w-7xl mx-auto px-4 text-center text-white w-full">
+            <h1 class="text-5xl lg:text-7xl font-bold leading-tight mb-6">
+                Your Compliant <span class="text-gce-yellow">Partner</span> in Bolivia
+            </h1>
+            <p class="mt-4 text-xl lg:text-2xl text-gray-200 max-w-3xl mx-auto mb-10 font-light">
+                Expert local solutions for international businesses.
+            </p>
+            <a href="#contacto" class="inline-flex items-center bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-10 rounded-full transition-all transform hover:scale-105 shadow-xl">
+                <i class="fab fa-whatsapp text-2xl mr-3"></i> Hablar con un Experto
             </a>
         </div>
-    </header>
+    </div>
 
-    </body>
+    <div class="py-24 bg-white" id="services">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <div class="p-8 border-t-8 border-gce-orange bg-white shadow-lg rounded-xl transition-all hover:scale-105">
+                <i class="fas fa-chart-line text-4xl text-gce-orange mb-6"></i>
+                <h3 class="text-xl font-bold mb-2">Auditoría & Tax</h3>
+                <p class="text-gray-500">Transparencia financiera bajo normativa local.</p>
+            </div>
+            <div class="p-8 border-t-8 border-gce-orange bg-white shadow-lg rounded-xl transition-all hover:scale-105">
+                <i class="fas fa-users-gear text-4xl text-gce-orange mb-6"></i>
+                <h3 class="text-xl font-bold mb-2">EOR Services</h3>
+                <p class="text-gray-500">Contratación inmediata sin necesidad de entidad legal.</p>
+            </div>
+            <div class="p-8 border-t-8 border-gce-orange bg-white shadow-lg rounded-xl transition-all hover:scale-105">
+                <i class="fas fa-file-invoice-dollar text-4xl text-gce-orange mb-6"></i>
+                <h3 class="text-xl font-bold mb-2">Payroll Management</h3>
+                <p class="text-gray-500">Gestión completa de planillas y beneficios sociales.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="py-20 bg-slate-100" id="contacto">
+        <div class="max-w-3xl mx-auto px-4">
+            <div class="bg-white rounded-3xl shadow-2xl p-8 md:p-12 border-t-4 border-gce-orange">
+                <h2 class="text-3xl font-bold text-center text-slate-900 mb-2">Solicitar Información</h2>
+                <p class="text-center text-gray-500 mb-8">Déjanos tus datos y un experto se pondrá en contacto contigo.</p>
+                
+                <form id="gceForm" class="space-y-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <input type="text" name="Nombre" placeholder="Tu Nombre Completo" required class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
+                        <input type="email" name="Email" placeholder="Tu Correo Electrónico" required class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <input type="text" name="WhatsApp" placeholder="WhatsApp (Ej: +591 ...)" required class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
+                        <select name="Servicio" required class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
+                            <option value="">Selecciona el Servicio</option>
+                            <option value="Auditoria">Auditoría & Tax</option>
+                            <option value="EOR">EOR Services</option>
+                            <option value="Payroll">Payroll Management</option>
+                        </select>
+                    </div>
+                    <textarea name="Mensaje" rows="4" placeholder="¿En qué podemos ayudarte?" required class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"></textarea>
+                    
+                    <button type="submit" id="submitBtn" class="w-full bg-gce-orange hover:bg-orange-600 text-white font-bold py-4 rounded-lg shadow-lg transition-all transform hover:scale-[1.02]">
+                        Enviar Datos a un Experto
+                    </button>
+                    <p id="mensajeExito" class="hidden text-center text-green-600 font-bold mt-4 text-lg italic">
+                        ¡Datos enviados con éxito! Revisaremos tu solicitud de inmediato.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-footer-custom py-12 text-white text-center">
+        <img src="logo.jpg" alt="Logo" class="h-10 mx-auto mb-6 grayscale brightness-200 opacity-90">
+        <p class="text-white font-bold tracking-widest mb-4">GCE BOLIVIA</p>
+        <div class="flex justify-center space-x-8 mb-6">
+            <a href="https://wa.me/59175788547" class="text-white hover:text-gray-200 transition-colors text-2xl"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in/jennybolivia" class="text-white hover:text-gray-200 transition-colors text-2xl"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p class="text-xs text-white uppercase tracking-widest font-semibold opacity-75">Basados en La Paz, Bolivia</p>
+    </footer>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz-yFNLmjMOYZUBfxCyIiXBe4mMDEGxMfRDQzum8bl0bUbCuVksCKpTLenVT5ei-jC6/exec';
+        const form = document.getElementById('gceForm');
+        const btn = document.getElementById('submitBtn');
+        const msg = document.getElementById('mensajeExito');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            btn.disabled = true;
+            btn.innerText = 'Enviando...';
+            
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    btn.classList.add('hidden');
+                    msg.classList.remove('hidden');
+                    form.reset();
+                })
+                .catch(error => {
+                    console.error('Error!', error.message);
+                    btn.disabled = false;
+                    btn.innerText = 'Error al enviar. Intenta de nuevo.';
+                });
+        });
+    </script>
+</body>
 </html>
